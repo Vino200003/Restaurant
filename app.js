@@ -12,6 +12,7 @@ const orderItemRoutes = require('./routes/orderItemRoutes');
 const paymentRoutes = require('./routes/paymentRoutes');
 const inventoryRoutes = require('./routes/inventoryRoutes');
 const feedbackRoutes = require('./routes/feedbackRoutes');
+const supplierRoutes = require('./routes/supplierRoutes');
 
 const app = express();
 
@@ -30,6 +31,7 @@ app.use('/api', orderItemRoutes);
 app.use('/api', paymentRoutes);
 app.use('/api', inventoryRoutes);
 app.use('/api', feedbackRoutes);
+app.use('/api', supplierRoutes);
 
 
 // Default route
